@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Products</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+      <!-- owl stylesheets --> 
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" href="css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   
+   </head>
+   <body>
+      <!-- header section start -->
+      <div class="header_section_2">
+         <div class="header_main">
+            <div class="mobile_menu">
+               <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <!-- <div class="logo_mobile"><a href="index.html"><img src="images/logo.png"></a></div> -->
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                     <ul class="navbar-nav">
+                        <li class="nav-item">
+                           <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item active">
+                           <a class="nav-link" href="watchs.html">Products</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                           <a class="nav-link " href="testimonial.html">Testimonial</a>
+                        </li> -->
+                        <li class="nav-item">
+                           <a class="nav-link " href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link " href="#"><img src="images/search-icon.png"></a>
+                        </li>
+                     </ul>
+                  </div>
+               </nav>
+            </div>
+            <div class="container-fluid">
+               <!-- <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div> -->
+               <div class="logo"><a href="index.html"><h1 style="font-size: 35px; font-weight: 800;">lOGO</h1></a></div>
+               <div class="menu_main">
+                  <ul>
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="about.html">About</a></li>
+                     <li class="active"><a href="watchs.html">Products</a></li>
+                     <!-- <li><a href="testimonial.html">Testimonial</a></li> -->
+                     <li><a href="contact.html">Contact us</a></li>
+                     <!-- <li><a href="#"><img src="images/search-icon.png"></a></li> -->
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- header section end -->
+      <!-- background bg start -->
+      <div class="background_bg">
+        <!-- watchs section start -->
+         <div class="watchs_section layout_padding">
+            <div class="row">
+              
+                  <div class="col-12 col-md-4 col-lg-3" style="padding: 5%;">
+                     <div class="one-sided-rectangle">
+ 
+                     <div class="radio-group">
+                        <input type="radio" id="subsidy" name="option" value="subsidy" >
+                        <label for="subsidy">Subsidy</label>
+                        <input type="radio" id="non-subsidy" name="option" value="non-subsidy" checked>
+                        <label for="non-subsidy">Non-Subsidy</label>
+                    </div>
+                    <!-- <div class="filter-container">
+                     <h2 style="color:white;">Price</h2>
+                     <div class="price-display">
+                         <span id="min-price">₹10000</span> – <span id="max-price">₹10,0000+</span>
+                     </div>
+                     <div class="slider-container">
+                        <input type="range" id="min-slider" min="100" max="100000" value="10000" oninput="updatePrice()">
+                        <input type="range" id="max-slider" min="10000" max="100000" value="100000" oninput="updatePrice()">
+                    </div>
+                     <button class="button-filter" id="apply-filter">Go</button>
+                 </div> -->
+             
+
+
+                 <h2 style="color: white;font-weight: 20px;font-size: 15px;padding-top: 5%;padding-bottom: 10%;">Choose your price ranges</h2>
+
+                 <div class="range_container">
+                  <div class="sliders_control">
+                      <div id="fromSliderTooltip" class="slider-tooltip">₹10000</div>
+                      <input id="fromSlider" type="range" value="100000" min="20000" max="100000" step="10" />
+                      <div id="toSliderTooltip" class="slider-tooltip">₹100000</div>
+                      <input id="toSlider" type="range" value="10000" min="10000" max="100000" step="10" />
+                  </div>
+          
+                  <!-- <div id="scale" class="scale" data-steps="50"></div> -->
+              </div>
+
+              <button style="padding: 2%;margin-top: 10%; width: 100px; border-radius: 20px;color: white; background-color: rgb(6, 98, 219);">Go</button>
+
+
+
+
+
+
+
+
+
+
+
+
+                  </div>
+               </div>
+          
+               <div class="col-12 col-md-8 col-lg-9">
+                
+
+                     <h1 class="watchs_taital">01<br>Our Products</h1>
+                     <div class="container">
+                        <!-- <div class="filter-buttons-solar">
+                           <button class="filter-btn-solar" data-filter="all">All</button>
+                           <button class="filter-btn-solar" data-filter="category1">Category 1</button>
+                           <button class="filter-btn-solar" data-filter="category2">Category 2</button>
+                           <button class="filter-btn-solar" data-filter="category3">Category 3</button>
+                       </div> -->
+                      
+                     <div class="watchs_section_2">
+                        <div class="dropdown">
+                           <button class="dropbtn">Panels <i class="fa fa-caret-down" aria-hidden="true"></i>
+         
+                           </button>
+                           <div class="dropdown-content">
+                              <a href="#">Hello.</a>
+                              <a href="#">World.</a>
+                           </div>
+                        </div>
+                        <div class="dropdown">
+                           <button class="dropbtn">  Inverter <i class="fa fa-caret-down" aria-hidden="true"></i>
+         
+                           </button>
+                           <div class="dropdown-content">
+                              <a href="#">Hello.</a>
+                              <a href="#">World.</a>
+                           </div>
+                        </div>
+                        <div class="dropdown">
+                           <button class="dropbtn">LA <i class="fa fa-caret-down" aria-hidden="true"></i>
+         
+                           </button>
+                           <div class="dropdown-content">
+                              <a href="#">Hello.</a>
+                              <a href="#">World.</a>
+                           </div>
+                        </div>
+                        <!-- <div class="about_section_3"> -->
+                           <div >
+                              <div class="view-toggle">
+                                 <!-- <button id="listView">List View</button> -->
+                                
+                                 <i class="fa-solid fa-list list-view-container"  id="listView" style="color: white;"></i>
+                                 <!-- <button >Grid View</button> -->
+                                 
+                                 <img src="images/dots-menu.png" class="  grid-view-container" id="gridView" style="width: 15px;" alt="">
+                               </div>
+<div class="row list-container list-view">
+ 
+   <div class="col-12 col-md-8 col-lg-11  item">
+      <div class="main-form">
+         <div class=" pd">
+           <!-- <div class="row"> -->
+             <!-- <div class="col-md-12 pd"> -->
+               <div class="box box-shadow">
+                 <div class="col-md-6 no-pd">
+                   <div class="left-side flex__width">
+                     <span class="price">₹100000 - ₹2000000 </span>
+
+
+                     <div class="ticket-sales-container">
+                        <!-- <div class="options">
+                           <label for="ticket-quantity"> Energy</label>
+                       
+                           
+                           <button id="add-to-cart"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve"><defs></defs><g style="stroke:none;stroke-width:0;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:none;fill-rule:nonzero;opacity:1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"><path d="M 72.975 58.994 H 31.855 c -1.539 0 -2.897 -1.005 -3.347 -2.477 L 15.199 13.006 H 3.5 c -1.933 0 -3.5 -1.567 -3.5 -3.5 s 1.567 -3.5 3.5 -3.5 h 14.289 c 1.539 0 2.897 1.005 3.347 2.476 l 13.309 43.512 h 36.204 l 10.585 -25.191 h -6.021 c -1.933 0 -3.5 -1.567 -3.5 -3.5 s 1.567 -3.5 3.5 -3.5 H 86.5 c 1.172 0 2.267 0.587 2.915 1.563 s 0.766 2.212 0.312 3.293 L 76.201 56.85 C 75.655 58.149 74.384 58.994 72.975 58.994 z" style="stroke:none;stroke-width:1;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:#fff0d4;fill-rule:nonzero;opacity:1;" transform="matrix(1 0 0 1 0 0)" stroke-linecap="round"/><circle cx="28.88" cy="74.33" r="6.16" style="stroke:none;stroke-width:1;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:#fff0d4;fill-rule:nonzero;opacity:1;" transform="matrix(1 0 0 1 0 0)"/><circle cx="74.59" cy="74.33" r="6.16" style="stroke:none;stroke-width:1;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:#fff0d4;fill-rule:nonzero;opacity:1;" transform="matrix(1 0 0 1 0 0)"/><path d="M 62.278 19.546 H 52.237 V 9.506 c 0 -1.933 -1.567 -3.5 -3.5 -3.5 s -3.5 1.567 -3.5 3.5 v 10.04 h -10.04 c -1.933 0 -3.5 1.567 -3.5 3.5 s 1.567 3.5 3.5 3.5 h 10.04 v 10.04 c 0 1.933 1.567 3.5 3.5 3.5 s 3.5 -1.567 3.5 -3.5 v -10.04 h 10.041 c 1.933 0 3.5 -1.567 3.5 -3.5 S 64.211 19.546 62.278 19.546 z" style="stroke:none;stroke-width:1;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:#fff0d4;fill-rule:nonzero;opacity:1;" transform="matrix(1 0 0 1 0 0)" stroke-linecap="round"/></g></svg></button>
+                        </div> -->
+                        <div class="poster">
+                           <img src="images/copy—Pngtree—3d illustration of apartment building_13130851.png" alt="">
+                           <div class="content">
+                              <!-- <h1><a href="">Add to cart</a></h1> -->
+                              <h1><a href="#" id="add-to-cart-link" style="color: white;">Add to cart</a></h1>
+    
+                           
+                            
+                          </div>
+                        </div>
+                       </div>
+                       <div id="side-panel" class="side-panel">
+                        <div class="side-panel-content">
+                            <span class="close-btn" id="close-btn">&times;</span>
+                            <!-- <h2 style="color: white;">Cart</h2> -->
+                            <span class="profile-title" style="display: flex; align-items: center; text-align: center; justify-content: center;">CART</span>
+                            <!-- <p style="color: white;">Selected items will be displayed here.</p> -->
+                            <div class="cart-item">
+                              <img src="images/copy—Pngtree—3d illustration of apartment building_13130851.png" alt="Item 1">
+                              <div class="item-details">
+                                <span class="item-name">Item 1</span>
+                                <span class="item-quantity">Quantity: 1</span>
+                                <span class="item-price">Price: 100000</span>
+                                </div>
+                              
+                              
+                              </div>
+
+                              <div class="cart-item">
+                                 <img src="images/copy—Pngtree—3d illustration of apartment building_13130851.png" alt="Item 1">
+                                 <div class="item-details">
+                                   <span class="item-name">Item 2</span>
+                                   <span class="item-quantity">Quantity: 1</span>
+                                   <span class="item-price">Price:1000000</span>
+                                   </div>
+                                   </div>
+
+                                   <div class="login-box">
+                                    <div class="login-content-warp">
+                                       <!-- <div class="profile-form"> -->
+                                          <!-- <img src="https://res.cloudinary.com/dzeznhbhc/image/upload/v1686724750/samples/cute-fantasy_1_jsf3ic.png" alt="women"> -->
+                                          <span class="profile-title">Contact Us</span>
+                                       <!-- </div> -->
+                                       <form action="">
+                                          <div class="email-input">
+                                             <span class="email"><i class="fa-solid fa-user"></i> </span>
+                                             <input type="text" placeholder="Enter your name">
+                                          </div>
+                           
+                                          <div class="password-input">
+                                             <span class="email"><i class="fa-solid fa-phone"></i></span>
+                                             <input type="password" placeholder="Enter your phone number">
+                                          </div>
+                                          <div class="password-input">
+                                             <span class="email"><i class="fa-solid fa-envelope"></i></span>
+                                             <input type="password" placeholder="Enter you email">
+                                          </div>
+                           
+                                          <!-- <div class="forget-link-warp">
+                                             <div class="checkbox">
+                                                <input type="checkbox">
+                                                <span>keep me signed in</span>
+                                             </div>
+                                             <div>
+                                                <span>forget your password</span>
+                                             </div>
+                                          </div> -->
+                                       </form>
+<!--                            
+                                       <div class="social-icon">
+                                          <a class="social-icon-warp" href="https://www.google.com/">
+                                             <img src="https://res.cloudinary.com/dzeznhbhc/image/upload/v1686725283/samples/google-plus_1_dbtrqm.png" alt="">
+                                             <span>Login google</span>
+                                          </a>
+                                       </div> -->
+                           
+                                       <div class="butn-sign">
+                                          <button>I am interested</button>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                   <!-- <button class="interested-btn">I am interested</button> -->
+
+                            
+                        </div>
+                    </div>
+
+
+                   </div>
+                 </div>
+                 <div class="col-md-6 no-pd">
+                   <div class="right-side flex__width">
+                     <h1 class="energy-option">Energy</h1>
+                     <p>Solar Category</p>
+                     
+                     <h2>Product Details</h2>
+                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                     
+                     <!-- <h2>Select Size</h2> -->
+                     
+                     <!-- <ul class="size-list">
+                       <li>38</li>
+                       <li>39</li>
+                       <li>40</li>
+                       <li>41</li>
+                       <li>42</li>
+                     </ul> -->
+                     
+                     <!-- <div class="">
+                         <button type="button" class="btn btn-cart">
+                         <span class="glyphicon glyphicon-shopping-cart"></span>                       Add To Cart
+                       </button>
+                     </div>
+                     
+                     <div class="">
+                         <button type="button" class="btn btn-search">
+                            <span class="glyphicon glyphicon-search"></span>                              Details
+                          </button> 
+                     </div> -->
+                     
+                   </div>
+                 </div>
+               </div>
+             <!-- </div> -->
+           <!-- </div> -->
+         </div>
+       </div>
+   </div>
+   <div class="col-12 col-md-8 col-lg-11  item">
+      <div class="main-form">
+         <div class=" pd">
+           <!-- <div class="row"> -->
+             <!-- <div class="col-md-12 pd"> -->
+               <div class="box box-shadow">
+                 <div class="col-md-6 no-pd">
+                   <div class="left-side flex__width">
+                     <span class="price">₹100000 - ₹2000000 </span>
+
+
+                     <div class="ticket-sales-container">
+                        <!-- <div class="options">
+                           <label for="ticket-quantity"> Energy</label>
+                       
+                           
+                           <button id="add-to-cart"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve"><defs></defs><g style="stroke:none;stroke-width:0;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:none;fill-rule:nonzero;opacity:1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"><path d="M 72.975 58.994 H 31.855 c -1.539 0 -2.897 -1.005 -3.347 -2.477 L 15.199 13.006 H 3.5 c -1.933 0 -3.5 -1.567 -3.5 -3.5 s 1.567 -3.5 3.5 -3.5 h 14.289 c 1.539 0 2.897 1.005 3.347 2.476 l 13.309 43.512 h 36.204 l 10.585 -25.191 h -6.021 c -1.933 0 -3.5 -1.567 -3.5 -3.5 s 1.567 -3.5 3.5 -3.5 H 86.5 c 1.172 0 2.267 0.587 2.915 1.563 s 0.766 2.212 0.312 3.293 L 76.201 56.85 C 75.655 58.149 74.384 58.994 72.975 58.994 z" style="stroke:none;stroke-width:1;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:#fff0d4;fill-rule:nonzero;opacity:1;" transform="matrix(1 0 0 1 0 0)" stroke-linecap="round"/><circle cx="28.88" cy="74.33" r="6.16" style="stroke:none;stroke-width:1;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:#fff0d4;fill-rule:nonzero;opacity:1;" transform="matrix(1 0 0 1 0 0)"/><circle cx="74.59" cy="74.33" r="6.16" style="stroke:none;stroke-width:1;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:#fff0d4;fill-rule:nonzero;opacity:1;" transform="matrix(1 0 0 1 0 0)"/><path d="M 62.278 19.546 H 52.237 V 9.506 c 0 -1.933 -1.567 -3.5 -3.5 -3.5 s -3.5 1.567 -3.5 3.5 v 10.04 h -10.04 c -1.933 0 -3.5 1.567 -3.5 3.5 s 1.567 3.5 3.5 3.5 h 10.04 v 10.04 c 0 1.933 1.567 3.5 3.5 3.5 s 3.5 -1.567 3.5 -3.5 v -10.04 h 10.041 c 1.933 0 3.5 -1.567 3.5 -3.5 S 64.211 19.546 62.278 19.546 z" style="stroke:none;stroke-width:1;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:#fff0d4;fill-rule:nonzero;opacity:1;" transform="matrix(1 0 0 1 0 0)" stroke-linecap="round"/></g></svg></button>
+                        </div> -->
+                        <div class="poster">
+                           <img src="images/copy—Pngtree—3d illustration of apartment building_13130851.png" alt="">
+                           <div class="content">
+                              <!-- <h1><a href="">Add to cart</a></h1> -->
+                              <h1><a href="#" id="add-to-cart-link" style="color: white;">Add to cart</a></h1>
+    
+                           
+                            
+                          </div>
+                        </div>
+                       </div>
+                       <div id="side-panel" class="side-panel">
+                        <div class="side-panel-content">
+                            <span class="close-btn" id="close-btn">&times;</span>
+                            <h2 style="color: white;">Cart</h2>
+                            <p style="color: white;">Selected items will be displayed here.</p>
+                            
+                        </div>
+                    </div>
+
+
+                   </div>
+                 </div>
+                 <div class="col-md-6 no-pd">
+                   <div class="right-side flex__width">
+                     <h1 class="energy-option">Energy</h1>
+                     <p>Solar Category</p>
+                     
+                     <h2>Product Details</h2>
+                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                     
+                     <!-- <h2>Select Size</h2> -->
+                     
+                     <!-- <ul class="size-list">
+                       <li>38</li>
+                       <li>39</li>
+                       <li>40</li>
+                       <li>41</li>
+                       <li>42</li>
+                     </ul> -->
+                     
+                     <!-- <div class="">
+                         <button type="button" class="btn btn-cart">
+                         <span class="glyphicon glyphicon-shopping-cart"></span>                       Add To Cart
+                       </button>
+                     </div>
+                     
+                     <div class="">
+                         <button type="button" class="btn btn-search">
+                            <span class="glyphicon glyphicon-search"></span>                              Details
+                          </button> 
+                     </div> -->
+                     
+                   </div>
+                 </div>
+               </div>
+             <!-- </div> -->
+           <!-- </div> -->
+         </div>
+       </div>
+   </div>
+   <div class="col-12 col-md-8 col-lg-11  item">
+      <div class="main-form">
+         <div class=" pd">
+           <!-- <div class="row"> -->
+             <!-- <div class="col-md-12 pd"> -->
+               <div class="box box-shadow">
+                 <div class="col-md-6 no-pd">
+                   <div class="left-side flex__width">
+                     <span class="price">₹100000 - ₹2000000 </span>
+
+
+                     <div class="ticket-sales-container">
+                        <!-- <div class="options">
+                           <label for="ticket-quantity"> Energy</label>
+                       
+                           
+                           <button id="add-to-cart"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve"><defs></defs><g style="stroke:none;stroke-width:0;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:none;fill-rule:nonzero;opacity:1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"><path d="M 72.975 58.994 H 31.855 c -1.539 0 -2.897 -1.005 -3.347 -2.477 L 15.199 13.006 H 3.5 c -1.933 0 -3.5 -1.567 -3.5 -3.5 s 1.567 -3.5 3.5 -3.5 h 14.289 c 1.539 0 2.897 1.005 3.347 2.476 l 13.309 43.512 h 36.204 l 10.585 -25.191 h -6.021 c -1.933 0 -3.5 -1.567 -3.5 -3.5 s 1.567 -3.5 3.5 -3.5 H 86.5 c 1.172 0 2.267 0.587 2.915 1.563 s 0.766 2.212 0.312 3.293 L 76.201 56.85 C 75.655 58.149 74.384 58.994 72.975 58.994 z" style="stroke:none;stroke-width:1;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:#fff0d4;fill-rule:nonzero;opacity:1;" transform="matrix(1 0 0 1 0 0)" stroke-linecap="round"/><circle cx="28.88" cy="74.33" r="6.16" style="stroke:none;stroke-width:1;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:#fff0d4;fill-rule:nonzero;opacity:1;" transform="matrix(1 0 0 1 0 0)"/><circle cx="74.59" cy="74.33" r="6.16" style="stroke:none;stroke-width:1;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:#fff0d4;fill-rule:nonzero;opacity:1;" transform="matrix(1 0 0 1 0 0)"/><path d="M 62.278 19.546 H 52.237 V 9.506 c 0 -1.933 -1.567 -3.5 -3.5 -3.5 s -3.5 1.567 -3.5 3.5 v 10.04 h -10.04 c -1.933 0 -3.5 1.567 -3.5 3.5 s 1.567 3.5 3.5 3.5 h 10.04 v 10.04 c 0 1.933 1.567 3.5 3.5 3.5 s 3.5 -1.567 3.5 -3.5 v -10.04 h 10.041 c 1.933 0 3.5 -1.567 3.5 -3.5 S 64.211 19.546 62.278 19.546 z" style="stroke:none;stroke-width:1;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:#fff0d4;fill-rule:nonzero;opacity:1;" transform="matrix(1 0 0 1 0 0)" stroke-linecap="round"/></g></svg></button>
+                        </div> -->
+                        <div class="poster">
+                           <img src="images/copy—Pngtree—3d illustration of apartment building_13130851.png" alt="">
+                           <div class="content">
+                              <!-- <h1><a href="">Add to cart</a></h1> -->
+                              <h1><a href="#" id="add-to-cart-link" style="color: white;">Add to cart</a></h1>
+    
+                           
+                            
+                          </div>
+                        </div>
+                       </div>
+                       <div id="side-panel" class="side-panel">
+                        <div class="side-panel-content">
+                            <span class="close-btn" id="close-btn">&times;</span>
+                            <h2 style="color: white;">Cart</h2>
+                            <p style="color: white;">Selected items will be displayed here.</p>
+                        </div>
+                    </div>
+
+
+                   </div>
+                 </div>
+                 <div class="col-md-6 no-pd">
+                   <div class="right-side flex__width">
+                     <h1 class="energy-option">Energy</h1>
+                     <p>Solar Category</p>
+                     
+                     <h2>Product Details</h2>
+                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                     
+                     <!-- <h2>Select Size</h2> -->
+                     
+                     <!-- <ul class="size-list">
+                       <li>38</li>
+                       <li>39</li>
+                       <li>40</li>
+                       <li>41</li>
+                       <li>42</li>
+                     </ul> -->
+                     
+                     <!-- <div class="">
+                         <button type="button" class="btn btn-cart">
+                         <span class="glyphicon glyphicon-shopping-cart"></span>                       Add To Cart
+                       </button>
+                     </div>
+                     
+                     <div class="">
+                         <button type="button" class="btn btn-search">
+                            <span class="glyphicon glyphicon-search"></span>                              Details
+                          </button> 
+                     </div> -->
+                     
+                   </div>
+                 </div>
+               </div>
+             <!-- </div> -->
+           <!-- </div> -->
+         </div>
+       </div>
+   </div>
+   <div class="col-12 col-md-8 col-lg-11  item">
+      <div class="main-form">
+         <div class=" pd">
+           <!-- <div class="row"> -->
+             <!-- <div class="col-md-12 pd"> -->
+               <div class="box box-shadow">
+                 <div class="col-md-6 no-pd">
+                   <div class="left-side flex__width">
+                     <span class="price">₹100000 - ₹2000000 </span>
+
+
+                     <div class="ticket-sales-container">
+                        <!-- <div class="options">
+                           <label for="ticket-quantity"> Energy</label>
+                       
+                           
+                           <button id="add-to-cart"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve"><defs></defs><g style="stroke:none;stroke-width:0;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:none;fill-rule:nonzero;opacity:1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"><path d="M 72.975 58.994 H 31.855 c -1.539 0 -2.897 -1.005 -3.347 -2.477 L 15.199 13.006 H 3.5 c -1.933 0 -3.5 -1.567 -3.5 -3.5 s 1.567 -3.5 3.5 -3.5 h 14.289 c 1.539 0 2.897 1.005 3.347 2.476 l 13.309 43.512 h 36.204 l 10.585 -25.191 h -6.021 c -1.933 0 -3.5 -1.567 -3.5 -3.5 s 1.567 -3.5 3.5 -3.5 H 86.5 c 1.172 0 2.267 0.587 2.915 1.563 s 0.766 2.212 0.312 3.293 L 76.201 56.85 C 75.655 58.149 74.384 58.994 72.975 58.994 z" style="stroke:none;stroke-width:1;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:#fff0d4;fill-rule:nonzero;opacity:1;" transform="matrix(1 0 0 1 0 0)" stroke-linecap="round"/><circle cx="28.88" cy="74.33" r="6.16" style="stroke:none;stroke-width:1;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:#fff0d4;fill-rule:nonzero;opacity:1;" transform="matrix(1 0 0 1 0 0)"/><circle cx="74.59" cy="74.33" r="6.16" style="stroke:none;stroke-width:1;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:#fff0d4;fill-rule:nonzero;opacity:1;" transform="matrix(1 0 0 1 0 0)"/><path d="M 62.278 19.546 H 52.237 V 9.506 c 0 -1.933 -1.567 -3.5 -3.5 -3.5 s -3.5 1.567 -3.5 3.5 v 10.04 h -10.04 c -1.933 0 -3.5 1.567 -3.5 3.5 s 1.567 3.5 3.5 3.5 h 10.04 v 10.04 c 0 1.933 1.567 3.5 3.5 3.5 s 3.5 -1.567 3.5 -3.5 v -10.04 h 10.041 c 1.933 0 3.5 -1.567 3.5 -3.5 S 64.211 19.546 62.278 19.546 z" style="stroke:none;stroke-width:1;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:#fff0d4;fill-rule:nonzero;opacity:1;" transform="matrix(1 0 0 1 0 0)" stroke-linecap="round"/></g></svg></button>
+                        </div> -->
+                        <div class="poster">
+                           <img src="images/copy—Pngtree—3d illustration of apartment building_13130851.png" alt="">
+                           <div class="content">
+                              <!-- <h1><a href="">Add to cart</a></h1> -->
+                              <h1><a href="#" id="add-to-cart-link" style="color: white;">Add to cart</a></h1>
+    
+                           
+                            
+                          </div>
+                        </div>
+                       </div>
+                       <div id="side-panel" class="side-panel">
+                        <div class="side-panel-content">
+                            <span class="close-btn" id="close-btn">&times;</span>
+                            <h2 style="color: white;">Cart</h2>
+                            <p style="color: white;">Selected items will be displayed here.</p>
+                        </div>
+                    </div>
+
+
+                   </div>
+                 </div>
+                 <div class="col-md-6 no-pd">
+                   <div class="right-side flex__width">
+                     <h1 class="energy-option">Energy</h1>
+                     <p>Solar Category</p>
+                     
+                     <h2>Product Details</h2>
+                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                     
+                     <!-- <h2>Select Size</h2> -->
+                     
+                     <!-- <ul class="size-list">
+                       <li>38</li>
+                       <li>39</li>
+                       <li>40</li>
+                       <li>41</li>
+                       <li>42</li>
+                     </ul> -->
+                     
+                     <!-- <div class="">
+                         <button type="button" class="btn btn-cart">
+                         <span class="glyphicon glyphicon-shopping-cart"></span>                       Add To Cart
+                       </button>
+                     </div>
+                     
+                     <div class="">
+                         <button type="button" class="btn btn-search">
+                            <span class="glyphicon glyphicon-search"></span>                              Details
+                          </button> 
+                     </div> -->
+                     
+                   </div>
+                 </div>
+               </div>
+             <!-- </div> -->
+           <!-- </div> -->
+         </div>
+       </div>
+   </div>
+</div>
+                     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+<!--                               
+                           <div class="row" style="display: flex;">
+                              
+                              <div class="col-md-5">
+
+                                 <div class="ticket-sales-container">
+                                    <div class="options">
+                                       <label for="ticket-quantity"> Energy</label> -->
+                                       <!-- <select id="ticket-quantity" name="ticket-quantity">
+                                         <option value="1">1</option>
+                                         <option value="2">2</option>
+                                         <option value="3">3</option>
+                                         <option value="4">4</option>
+                                         <option value="5">5</option>
+                                         <option value="6">6</option>
+                                         <option value="7">7</option>
+                                         <option value="8">8</option>
+                                       </select> -->
+                                       
+                                       <!-- <button id="add-to-cart"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve"><defs></defs><g style="stroke:none;stroke-width:0;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:none;fill-rule:nonzero;opacity:1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"><path d="M 72.975 58.994 H 31.855 c -1.539 0 -2.897 -1.005 -3.347 -2.477 L 15.199 13.006 H 3.5 c -1.933 0 -3.5 -1.567 -3.5 -3.5 s 1.567 -3.5 3.5 -3.5 h 14.289 c 1.539 0 2.897 1.005 3.347 2.476 l 13.309 43.512 h 36.204 l 10.585 -25.191 h -6.021 c -1.933 0 -3.5 -1.567 -3.5 -3.5 s 1.567 -3.5 3.5 -3.5 H 86.5 c 1.172 0 2.267 0.587 2.915 1.563 s 0.766 2.212 0.312 3.293 L 76.201 56.85 C 75.655 58.149 74.384 58.994 72.975 58.994 z" style="stroke:none;stroke-width:1;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:#fff0d4;fill-rule:nonzero;opacity:1;" transform="matrix(1 0 0 1 0 0)" stroke-linecap="round"/><circle cx="28.88" cy="74.33" r="6.16" style="stroke:none;stroke-width:1;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:#fff0d4;fill-rule:nonzero;opacity:1;" transform="matrix(1 0 0 1 0 0)"/><circle cx="74.59" cy="74.33" r="6.16" style="stroke:none;stroke-width:1;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:#fff0d4;fill-rule:nonzero;opacity:1;" transform="matrix(1 0 0 1 0 0)"/><path d="M 62.278 19.546 H 52.237 V 9.506 c 0 -1.933 -1.567 -3.5 -3.5 -3.5 s -3.5 1.567 -3.5 3.5 v 10.04 h -10.04 c -1.933 0 -3.5 1.567 -3.5 3.5 s 1.567 3.5 3.5 3.5 h 10.04 v 10.04 c 0 1.933 1.567 3.5 3.5 3.5 s 3.5 -1.567 3.5 -3.5 v -10.04 h 10.041 c 1.933 0 3.5 -1.567 3.5 -3.5 S 64.211 19.546 62.278 19.546 z" style="stroke:none;stroke-width:1;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:#fff0d4;fill-rule:nonzero;opacity:1;" transform="matrix(1 0 0 1 0 0)" stroke-linecap="round"/></g></svg></button> -->
+                                    <!-- </div>
+                                    <div class="poster">
+                                       <img src="images/copy—Pngtree—3d illustration of apartment building_13130851.png" alt="">
+                                    </div>
+                                   </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 <!-- <div class="border_main">
+                                    <div class="image_4"><img src="images/copy—Pngtree—3d illustration of apartment building_13130851.png"></div>
+                                    <div class="product">
+                                       <h2>DEIDAD</h2>
+                                       <p>Women's Top</p> -->
+                                       <!-- <div class="rating">
+                                           <span class="stars">★★★★★</span>
+                                           <span class="reviews">20</span>
+                                       </div>
+                                       <p class="sales">800+ bought in past month</p> -->
+                                       <!-- <div class="price">
+                                           <span class="current-price">₹295</span>
+                                           <span class="original-price">M.R.P: ₹1,299</span> -->
+                                           <!-- <span class="discount">(77% off)</span> -->
+                                       <!-- </div> -->
+                                       <!-- <p class="delivery">FREE Delivery by Amazon</p> -->
+                                   <!-- </div>
+                                   <div class="col-md-5"> -->
+                                    <!-- <div class="border_main">
+                                       <div class="image_4"><img src="images/—Pngtree—environmental protection technology solar panel_6018555.png"></div>
+                                    </div> -->
+                                    <!-- <div class="ticket-sales-container">
+                                       <div class="options">
+                                          <label for="ticket-quantity"> Energy</label> -->
+                                          <!-- <select id="ticket-quantity" name="ticket-quantity">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                          </select> -->
+                                          
+                                          <!-- <button id="add-to-cart"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve"><defs></defs><g style="stroke:none;stroke-width:0;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:none;fill-rule:nonzero;opacity:1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"><path d="M 72.975 58.994 H 31.855 c -1.539 0 -2.897 -1.005 -3.347 -2.477 L 15.199 13.006 H 3.5 c -1.933 0 -3.5 -1.567 -3.5 -3.5 s 1.567 -3.5 3.5 -3.5 h 14.289 c 1.539 0 2.897 1.005 3.347 2.476 l 13.309 43.512 h 36.204 l 10.585 -25.191 h -6.021 c -1.933 0 -3.5 -1.567 -3.5 -3.5 s 1.567 -3.5 3.5 -3.5 H 86.5 c 1.172 0 2.267 0.587 2.915 1.563 s 0.766 2.212 0.312 3.293 L 76.201 56.85 C 75.655 58.149 74.384 58.994 72.975 58.994 z" style="stroke:none;stroke-width:1;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:#fff0d4;fill-rule:nonzero;opacity:1;" transform="matrix(1 0 0 1 0 0)" stroke-linecap="round"/><circle cx="28.88" cy="74.33" r="6.16" style="stroke:none;stroke-width:1;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:#fff0d4;fill-rule:nonzero;opacity:1;" transform="matrix(1 0 0 1 0 0)"/><circle cx="74.59" cy="74.33" r="6.16" style="stroke:none;stroke-width:1;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:#fff0d4;fill-rule:nonzero;opacity:1;" transform="matrix(1 0 0 1 0 0)"/><path d="M 62.278 19.546 H 52.237 V 9.506 c 0 -1.933 -1.567 -3.5 -3.5 -3.5 s -3.5 1.567 -3.5 3.5 v 10.04 h -10.04 c -1.933 0 -3.5 1.567 -3.5 3.5 s 1.567 3.5 3.5 3.5 h 10.04 v 10.04 c 0 1.933 1.567 3.5 3.5 3.5 s 3.5 -1.567 3.5 -3.5 v -10.04 h 10.041 c 1.933 0 3.5 -1.567 3.5 -3.5 S 64.211 19.546 62.278 19.546 z" style="stroke:none;stroke-width:1;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:#fff0d4;fill-rule:nonzero;opacity:1;" transform="matrix(1 0 0 1 0 0)" stroke-linecap="round"/></g></svg></button> -->
+                                       <!-- </div>
+                                       <div class="poster">
+                                          <img src="images/copy—Pngtree—3d illustration of apartment building_13130851.png" alt="">
+                                       </div>
+                                      </div> -->
+                                 </div>
+                                 </div>
+                              </div>
+                             
+                           
+                              <!-- <div class="col-md-3">
+                                 <div class="border_main">
+                                    <div class="image_4"><img src="images/copy—Pngtree—3d illustration of apartment building_13130851.png"></div>
+                                 </div>
+                              </div>
+                              <div class="col-md-3">
+                                 <div class="border_main">
+                                    <div class="image_4"><img src="images/—Pngtree—environmental protection technology solar panel_6018555.png"></div>
+                                 </div>
+                              </div> -->
+                           </div>
+                        </div>
+                        <!-- <div class="row">
+                           <div class="col-md-6">
+                              <div class="image_1"><img src="images/img-1.png"></div>
+                           </div>
+                           <div class="col-md-6">
+                              <h4 class="uni_text">Uni Watch</h4>
+                              <p class="watchs_text">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                              <h4 class="rate_text"><span style="color: #b60213;">$</span>100</h4>
+                              <div class="read_bt1"><a href="#">Buy Now</a></div>
+                           </div>
+                        </div> -->
+                     </div>
+                     
+                     <!-- <div class="watchs_section_3">
+                        <div class="row">
+                           <div class="col-md-6">
+                              <h4 class="uni_text">Uni Watch</h4>
+                              <p class="watchs_text">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                              <h4 class="rate_text"><span style="color: #b60213;">$</span>100</h4>
+                              <div class="read_bt1"><a href="#">Buy Now</a></div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="image_2"><img src="images/img-2.png"></div>
+                           </div>
+                        </div>
+                     </div> -->
+                     <br>
+      
+                  </div>
+               </div>
+            </div>
+           
+           
+         <!-- </div> -->
+         <div class="seemore_bt"><a href="#">See More</a>
+         </div>
+         <!-- watchs section end -->
+      <!-- </div> -->
+      <!-- background bg end -->
+      <!-- footer section start -->
+      <div class="footer_section layout_padding">
+         <div class="container">
+            <h3 class="follow_text">Follow Now</h3>
+            <div class="social_icon">
+               <ul>
+                  <li><a href="#"><img src="images/fb-icon.png"></a></li>
+                  <li><a href="#"><img src="images/twitter-icon.png"></a></li>
+                  <li><a href="#"><img src="images/linkedin-icon.png"></a></li>
+                  <li><a href="#"><img src="images/instagram-icon.png"></a></li>
+                  <li><a href="#"><img src="images/youtub-icon.png"></a></li>
+               </ul>
+            </div>
+            <div class="location_main">
+               <div class="location_left">
+                  <div class="call_text"><a href="#"><img src="images/map-icon.png"><span class="call_padding">Location</span></a></div>
+               </div>
+               <div class="location_middle">
+                  <div class="call_text"><a href="#"><img src="images/mail-icon.png"><span class="call_padding">demo@gmail.com</span></a></div>
+               </div>
+               <div class="location_right">
+                  <div class="call_text"><a href="#"><img src="images/call-icon.png"><span class="call_padding">Call +01 1234567890</span></a></div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- footer section end -->
+      <!-- copyright section start -->
+      <div class="copyright_section">
+         <div class="container">
+            <p class="copyright_text">2020 All Rights Reserved. Design by <a href="https://html.design">Free html  Templates</a> Distribution by <a href="https://themewagon.com">ThemeWagon</a></p>
+         </div>
+      </div>
+      <!-- copyright section end -->
+      <!-- Javascript files-->
+       <script src="js/script.js"></script>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <script src="js/script.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <!-- javascript --> 
+      <script src="js/owl.carousel.js"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>  
+      <script>
+       document.addEventListener('DOMContentLoaded', function() {
+            const addToCartLink = document.getElementById('add-to-cart-link');
+            const sidePanel = document.getElementById('side-panel');
+            const closeBtn = document.getElementById('close-btn');
+
+            console.log(addToCartLink, sidePanel, closeBtn); // Debugging line
+
+            addToCartLink.addEventListener('click', function(event) {
+                event.preventDefault();
+                sidePanel.style.display = 'block';
+            });
+
+            closeBtn.addEventListener('click', function() {
+                console.log('Close button clicked'); // Debugging line
+                sidePanel.style.display = 'none';
+            });
+        });
+      </script>  
+   </body>
+</html>
